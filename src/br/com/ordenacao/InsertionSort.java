@@ -21,11 +21,12 @@ public class InsertionSort {
         System.out.println("\n");
         
         //Aqui faz a Ordenação
-        for (i = 0; i < element.length; i++) {
-            chave = element[i];
-            for (int j = i-1; j >= 0 && chave < element[j]; j--) {
-                element[j+1] = element[j];
-                
+        for (int j = 1; j < element.length; j++) {
+            chave = element[j];
+            i= j-1;
+            while(i >= 0 &&  element[i]>chave ) {
+                element[i+1] = element[i];
+                i-=1;
             }
             element[i+1] = chave;
         }
