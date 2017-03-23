@@ -18,7 +18,7 @@ public class InsertionSort {
         System.out.print("Vetor Desordenado element[j]= ");
         //aqui mostra o vetor de element desordenado
         for (int j = 0; j < element.length; j++)
-            System.out.printf("[%d],",element[j]);
+            System.out.printf("[%d]",element[j]);
         
         System.out.println("\n");
         
@@ -35,7 +35,7 @@ public class InsertionSort {
         System.out.print("Vetor Ordenado element[j]= ");
         //Aqui mostro já Ordenado
         for (int j = 0; j < element.length; j++)
-            System.out.printf("[%d],",element[j]);
+            System.out.printf("[%d]",element[j]);
                
         System.out.println("\n");
     }
