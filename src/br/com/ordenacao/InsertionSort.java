@@ -3,21 +3,26 @@
  */
 package br.com.ordenacao;
 
+import java.util.Random;
+
 /**
  *
  * @author Evandro
  */
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] element = {39,14,52,65,7,1,5,6,4};
+        int[] element = new int[100];
+        Random r = new Random();
         int chave;
         int i;
-        
+      
         System.out.print("Vetor Desordenado element[j]= ");
         //aqui mostra o vetor de element desordenado
-        for (int j = 0; j < element.length; j++)
+        for (int j = 0; j < element.length; j++){
+            element[j] = r.nextInt(1000);
             System.out.printf("[%d]",element[j]);
-        
+            
+        }
         System.out.println("\n");
         
         //Aqui faz a Ordenação

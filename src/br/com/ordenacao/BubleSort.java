@@ -5,6 +5,7 @@
  */
 package br.com.ordenacao;
 
+import java.util.Random;
 import static javax.management.Query.gt;
 import static javax.management.Query.lt;
 
@@ -16,14 +17,16 @@ public class BubleSort {
 
     public static void main(String[] args) {
 
-        int[] vet = {8, 19, 31, 25, 1};
+        int[] vet = new int[100];
+        Random rd = new Random();
         int aux = 0;
         int i = 0;
 
         System.out.print("Vetor Desordenado vet[i] = ");
-        for (i = 0; i<vet.length; i++) 
-            System.out.printf("[%d],",  vet[i]);
-        
+        for (i = 0; i<vet.length; i++){ 
+            vet[i] = rd.nextInt(1000);
+            System.out.printf("[%d]",  vet[i]);
+        }
         System.out.println("\n");
 
         for (i = vet.length; i>=1; i--) {
@@ -38,7 +41,7 @@ public class BubleSort {
         }
         System.out.print("Vetor Ordenado vet[i] = ");
         for (i = 0; i < vet.length; i++) 
-            System.out.printf("[%d],",vet[i]);
+            System.out.printf("[%d]",vet[i]);
         System.out.println("");
     }
 }
