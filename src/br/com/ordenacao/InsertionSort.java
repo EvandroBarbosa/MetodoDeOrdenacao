@@ -1,6 +1,3 @@
-/*
- *Esse codigo não esta funcionando é preciso fazer algumas correções 
- */
 package br.com.ordenacao;
 
 import java.util.Random;
@@ -21,7 +18,9 @@ public class InsertionSort {
         for (int j = 0; j < element.length; j++){
             element[j] = r.nextInt(1000);
             System.out.printf("[%d]",element[j]);
-            
+            if (j%10 == 0){ 
+                System.out.println();
+            }
         }
         System.out.println("\n");
         

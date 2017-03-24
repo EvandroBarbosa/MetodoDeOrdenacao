@@ -9,7 +9,7 @@ import java.util.Random;
 public class SelectionSort {
     
     public static void main(String[] args) {
-        int selecao[] = new int[100000];
+        int selecao[] = new int[20];
         Random ale = new Random();
         int aux;
         int temp;
@@ -17,7 +17,7 @@ public class SelectionSort {
         //Aqui preenche o vetor de forma aleatoria
         System.out.print("Vetor desOrdenado vetor[i] = ");
         for (int i = 0; i < selecao.length; i++) {
-            selecao[i] = ale.nextInt(100000);
+            selecao[i] = ale.nextInt(1000);
             System.out.printf("%d,",selecao[i]);
         }
         System.out.println("\n");

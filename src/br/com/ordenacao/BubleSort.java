@@ -17,14 +17,14 @@ public class BubleSort {
 
     public static void main(String[] args) {
 
-        int[] vet = new int[100];
+        int[] vet = new int[20];
         Random rd = new Random();
         int aux = 0;
         int i = 0;
 
         System.out.print("Vetor Desordenado vet[i] = ");
         for (i = 0; i<vet.length; i++){ 
-            vet[i] = rd.nextInt(1000);
+            vet[i] = rd.nextInt(100);
             System.out.printf("[%d]",  vet[i]);
         }
         System.out.println("\n");
@@ -39,6 +39,7 @@ public class BubleSort {
                 }
             }
         }
+        
         System.out.print("Vetor Ordenado vet[i] = ");
         for (i = 0; i < vet.length; i++) 
             System.out.printf("[%d]",vet[i]);
