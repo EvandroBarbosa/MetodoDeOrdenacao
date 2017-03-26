@@ -16,7 +16,7 @@ public class Exer1BSelectionSort {
         int min, aux;//variaveis auxiliar
         int cont =0, troca = 0;
         //Aqui mostra o vetor desordenado
-        System.out.print("vetor Desordenado vetorB[j]");
+        System.out.print("vetor Desordenado vetorB[j]= ");
         for (int j = 0; j < vetorB.length; j++) {
             System.out.printf(" [%d] ",vetorB[j]);
             
@@ -29,23 +29,24 @@ public class Exer1BSelectionSort {
             for (int l = i+1; l <= vetorB.length-1; l++) {
                 
                 if (vetorB[l] < vetorB[min]) {
-                    aux = l;
+                    min = l;
                 }
                     cont++;
             }
                 aux = vetorB[i];
                 vetorB[i] = vetorB[min];
-                vetorB[i+1] = aux;
+                vetorB[min] = aux;
                     troca++;
         }
-        //Aqui mostra a quantidade de comparação 
-        System.out.println("Comparação = "+cont);
-        System.out.println("Troca = "+troca);
-        System.out.print("vetor Ordenado vetorB[j]");
+        //mostra ja ordenado
+        System.out.print("vetor Ordenado vetorB[j]= ");
         for (int j = 0; j < vetorB.length; j++) {
             System.out.printf(" [%d] ",vetorB[j]);
         }
         System.out.println();
+        //Aqui mostra a quantidade de comparação 
+        System.out.println("Comparação = "+cont);
+        System.out.println("Troca = "+troca);
         
     }
 }
