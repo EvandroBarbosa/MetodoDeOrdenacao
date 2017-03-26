@@ -10,5 +10,7 @@ package br.com.ordenacao;
  * @author Evandro
  */
 public class MegaSort {
-    
+    public static void main(String[] args) {
+        
+    }
 }
