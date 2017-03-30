@@ -16,26 +16,26 @@ public class ShellSort {
         int n = vetSell.length;
         
         //Aqui vamos ordena-lo
-        while (h < n) {            
+        for(h = 1; h < n; h++) {            
             h = h*3+1;
             h = h/3;
             
             int cont, j;
-            while (h>0) {                
+            for(h = n; h>0; h++) {                
                 for (int i = h; i < n; i++) {
                     cont = vetSell[i];
                     j = i;
-                    while (j >= h && vetSell[j-h]>cont) {                        
+                    if(j >= h && vetSell[j-h]>cont) {                        
                         vetSell[j] = vetSell[j-h];
                         j = j-h;
-                        j++;
+                       
                     }
                     vetSell[j] = cont;
                 }
                 h = h / 2;
-                h--;
+                
             }
-            h++;
+            
         }
         
         System.out.print("Vetor Ordenado vetSell[i] = ");
