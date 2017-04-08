@@ -11,7 +11,7 @@ package br.exercico.ordenacao;
  */
 public class Ex1BBubleSort {
     public static void main(String[] args) {
-        int vetorB[] = {2,4,6,8,12,3,1};
+        int vetorB[] = {2,4,6,8,12};
         int i;//variavel cotatdora
         int chave;//variaveis auxiliar
         int comp =0, troca = 0;
@@ -26,7 +26,6 @@ public class Ex1BBubleSort {
         //Aqui que será ordenado o vetor
         
         for (i = vetorB.length; i>=1; i--) {
-            comp++;
             for (int j = 1; j < i; j++) {
                 if(vetorB[j - 1] > vetorB[j]) {
                     chave = vetorB[j];
@@ -34,6 +33,7 @@ public class Ex1BBubleSort {
                     vetorB[j - 1] = chave;
                     troca++;
                 }
+                comp++;
             }
         }
         
